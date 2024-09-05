@@ -66,11 +66,28 @@ It looks like you can make your recipe!
     1 ounce = 28 grams
 ```
 
-2. The user must be able to enter singular and plural measurements (i.e., teaspoon or teaspoons).
-3. The "How much" prompts as shown above must include the specific ingredient the user has entered.
-4. Your program must print an error message in the case that user has entered an unsupported measurement (i.e., the on hand amount is not teaspoon/tablespoon/cup/ounce or the needed amount is not ml or grams). It is acceptable for the program to exit after the error message is printed.
-5. *Your program must use functions and constants appropriately.* My solution uses 16 constants and 11 functions in addition to main.
-6. Your program must be saved in a file `recipe_helper.py`.
+2. You **must** implement the following function that will be tested via automated test cases:
+```python
+def get_amount_needed_in_us_std(
+        us_std_units: str, 
+        metric_amount_needed: float, 
+        metric_units: str):
+   """
+   Given an amount needed in metric units, determines
+   the amount needed in US standard units.
+   Parameters:
+      us_std_units(str): US standard units, e.g., tablespoons
+      metric_amount_needed(float): Amount required in metric, e.g., 725
+      metric_units(str): Metric units, e.g., ml
+   """
+```
+
+3. *Your program must use additional functions and constants appropriately.* 
+4. The user must be able to enter singular and plural measurements (i.e., teaspoon or teaspoons).
+5. The "How much" prompts as shown above must include the specific ingredient the user has entered.
+6. The amount and units must be entered on one line, i.e., ```4 tablespoons```
+7. Your program must print an error message in the case that user has entered an unsupported measurement (i.e., the on hand amount is not teaspoon/tablespoon/cup/ounce or the needed amount is not ml or grams). It is acceptable for the program to exit after the error message is printed.
+8. Your program must be saved in a file `recipe_helper.py`.
 
 ## Assignment Submission
 
