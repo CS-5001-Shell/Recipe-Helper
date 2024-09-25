@@ -91,6 +91,23 @@ def get_amount_needed_in_us_std(
 7. Your program must print an error message in the case that user has entered an unsupported measurement (i.e., the on hand amount is not teaspoon/tablespoon/cup/ounce or the needed amount is not ml or grams). It is acceptable for the program to exit after the error message is printed.
 8. Your program must be saved in a file `recipe_helper.py`.
 
+## Error Handling
+1. The program does **not** need to verify that the user has used the correct
+   pluralization. It is acceptable to accept input such as "2 cup" or "1
+   tablespoons".
+2. The program does **not**  need to use the correct pluralization in the
+   output. It is acceptable for the output to be "You need 1 tablespoons of
+   ...".
+3. If the user enters a multi-word item, the program will print a message and
+   exit; for example, if the user enters "6 gala apples" the program will tell the user
+   the unit is invalid and exit.
+4. It is **not** required to handle the case of a non-floating point
+   measurement. If the user enters 'bananas 5' the program will generate an
+   error and crash when the program tries to convert the word bananas to a
+   floating point number.
+5. It is not required to use iteration in any part of this program. If an error
+   is detected, the program will print a message and exit.
+
 ## Assignment Submission
 
 To earn credit for this assignment you must commit all of your changes to your GitHub repository prior to the deadline. It is strongly recommended that you commit your changes regularly. Do not wait until you complete all four parts of the assignment to upload your (partial) solution.
